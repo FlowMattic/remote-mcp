@@ -1,6 +1,6 @@
 {
-  "name": "mcp-remote",
-  "version": "1.0.1",
+  "name": "flowmattic-mcp-remote",
+  "version": "1.0",
   "description": "A lightweight bridge for Model Context Protocol remote connections",
   "repository": "https://github.com/FlowMattic/remote-mcp.git",
   "homepage": "https://flowmattic.com",
