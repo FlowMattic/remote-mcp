@@ -2,6 +2,8 @@
   "name": "mcp-remote",
   "version": "1.0.1",
   "description": "A lightweight bridge for Model Context Protocol remote connections",
+  "repository": "https://github.com/FlowMattic/remote-mcp.git",
+  "homepage": "https://flowmattic.com",
   "type": "module",
   "main": "dist/bridge.js",
   "bin": {
@@ -26,5 +28,8 @@
   "devDependencies": {
     "@types/node": "^20.10.5",
     "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
