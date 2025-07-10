@@ -1,6 +1,6 @@
 {
   "name": "flowmattic-mcp-remote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight bridge for Model Context Protocol remote connections",
   "repository": {
     "type": "git",
@@ -10,19 +10,23 @@
   "type": "module",
   "main": "dist/bridge.js",
   "bin": {
-    "mcp-remote": "dist/bridge.js"
+    "mcp-remote": "dist/bridge.js",
+    "flowmattic-mcp-remote": "dist/bridge.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && chmod +x dist/bridge.js",
     "start": "node dist/bridge.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "dev": "tsc && node dist/bridge.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "mcp",
     "claude",
     "flowmattic",
     "ai",
-    "bridge"
+    "bridge",
+    "model-context-protocol"
   ],
   "author": "FlowMattic",
   "license": "MIT",
@@ -35,5 +39,13 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ]
 }
