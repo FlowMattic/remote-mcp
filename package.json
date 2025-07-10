@@ -1,0 +1,30 @@
+{
+  "name": "mcp-remote",
+  "version": "1.0.1",
+  "description": "A lightweight bridge for Model Context Protocol remote connections",
+  "type": "module",
+  "main": "dist/bridge.js",
+  "bin": {
+    "mcp-remote": "dist/bridge.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bridge.js"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "flowmattic",
+    "ai",
+    "bridge"
+  ],
+  "author": "FlowMattic",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  }
+}
